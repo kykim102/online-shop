@@ -1,0 +1,134 @@
+.container {
+  display: flex;
+  gap: 10px;
+  margin: 2rem 0;
+  width: 90%;
+}
+
+.productImgContainer{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.productImg {
+  width: 90%;
+  max-height: 600px;
+  object-fit: contain;
+}
+
+.productInfo {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.name {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #222222
+}
+
+.price {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #222222
+}
+
+.description {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #888888
+}
+
+.sizeLabel {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #888888;
+  text-transform: uppercase;
+}
+
+.star {
+  color: #C90000;
+}
+
+.sizeBtnContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+
+}
+.sizeBtn {
+  border: 1px solid #CCCCCC;
+  color: #888888;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  background-color: #FFFFFF;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.sizeBtn.selected {
+  border: 2px solid #222222;
+  color: #222222;
+  width: 33px;
+  height: 33px;
+  line-height: 33px;
+}
+
+.selectedSize {
+  color: #222222;
+  margin-left: 5px;
+}
+
+.addToCartBtn {
+  border: 2px solid #222222;
+  color: #222222;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 30px;
+  transition: background-color 0.2s;
+}
+
+.addToCartBtn:hover {
+  color: #ffffff;
+  background: #222222;
+}
+
+.errorMessage {
+  color: #C90000;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .productImgContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .productInfo {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+}
